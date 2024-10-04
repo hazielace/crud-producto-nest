@@ -7,7 +7,7 @@
 3. Configurar el archivo `.env` con los datos de conexión a la BD, si es necesario.
 4. Inicia el servidor de desarrollo con `npm run start:dev` o `yarn start:dev`.
 5. Se utilizo el puerto "4000" para probar las rutas, lo puede cambiar en el archivo `main.ts` en `app.listen(4000)`;
-
+6. Ejecutar comando `npx prisma generate` y `npm add @nestjs/core @nestjs/common rxjs`
 ## Rutas
 
 - `GET /productos` - Ver lista de productos.
@@ -22,5 +22,6 @@
 - Se uso Prisma como ORM
 - Como BD se uso Sqlite
 - Se implementó el CRUD usando controladores y servicios.
+- Al principio tuve difultades con la configuración de Prisma por la conexion del cliente de Prisma lo pude solucionar con el comando `npx prisma generate`
 
 ## Se adjunta postman test-apis 
